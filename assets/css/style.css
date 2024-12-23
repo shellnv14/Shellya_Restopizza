@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Lobster&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Oswald';
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #2e2727;
+}
+
+/* header position fixed */
+
+header {
+    height: 60px;
+    background: black;
+    opacity: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* heading and logo */
+
+h1,
+h2 {
+    font-family: Lobster;
+    letter-spacing: 8px;
+    text-align: center;
+    font-size: 250%;
+}
+
+#logo {
+    float: left;
+    font-size: 350%;
+    margin-left: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* navigation links */
+
+.list {
+    font-size: 110%;
+    letter-spacing: 5px;
+    list-style: none;
+}
+
+.list,
+#logo {
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.list a {
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 14px 5px;
+    margin-right: 30px;
+}
+
+.list a:hover {
+    color: orange;
+    transform: scale(1.4);
+    transition: transform 0.6s;
+}
+
+.list a.active {
+    color: Red;
+}
+
+/* hero image */
+
+#hero-image {
+    height: 490px;
+    width: 100%;
+    background: url('../images/hero-image.webp') center 100% / cover no-repeat;
+    overflow: hidden;
+}
+
+/* our pizza ethos */
+
+#our-pizza-ethos {
+    height: 570px;
+}
+
+.flex-ethos {
+    flex: 1 0 30%;
+    flex-flow: row wrap;
+}
+
+.flex-ethos img {
+    gap: 5px;
+    width: 98%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.flex-ethos p,
+h3 {
+    width: 90%;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+/* ethos image path */
+
+.pizza-dough-image {
+    background: url('../images/pizza-dough.webp') no-repeat;
+}
+
+.pizza-sauce-image {
+    background: url('../images/pizza-sauce.webp') no-repeat;
+}
+
+.mozzarella-cheese-image {
+    background: url('../images/mozzarella-cheese.webp') no-repeat;
+}
+
+/* ethos cover text heading */
+
+.cover-text-heading {
+    text-decoration: 2px double underline red;
+    padding-bottom: 10px;
+}
+
+/* address filed */
+.address {
+    height: 175px;
+}
+
+.address-left-about {
+    padding-left: 10px;
+    height: 170px;
+    width: 45%;
+    float: left;
+}
+
+.address-right-about {
+    height: 150px;
+    width: 40%;
+    float: left;
+}
+
+.address span {
+    font-weight: bold;
+    font-size: large;
+}
+
+/*footer and google map  */
+footer .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-map {
+    flex: 3;
+}
+
+.flex-social {
+    flex: 1;
+}
+
+#map-style {
+    width: 100%;
+    height: 300px;
+}
+
+/* footer social media link icons */
+
+.social-media-links>li {
+    display: block;
+    text-align: center;
+}
+
+.social-media-links i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 4%;
+    color: #fff;
+}
+
+/* contact us form Styles*/
+.comment-section {
+    clear: left;
+    background-image: url('../images/giftcardform.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    top: 0;
+}
+
+.signup-form {
+    margin: 70px 2% 0 2%;
+    color: #fff;
+    background-color: rgba(54, 38, 116, 0.6);
+    max-width: 400px;
+    padding: 30px;
+}
+
+.join-button {
+    width: 190px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #009688;
+    color: rgb(250, 249, 249);
+    border: 2px solid #009688;
+}
+
+form {
+    line-height: 1.5;
+}
+
+input[type=text],
+input[type=email] {
+    height: 30px;
+    width: 90%;
+    padding-left: 5px;
+}
+
+textarea {
+    width: 90%;
+}
+
+/* menu page*/
+
+.grid-container {
+    display: grid;
+    /* top: 55px; */
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-item {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+.grid-item img {
+    padding-left: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 2px;
+    justify-content: center;
+}
+
+.flex-container {
+    flex: 1 0 32%;
+    flex-flow: row wrap;
+    padding-top: 55px;
+}
+
+.grid-container label {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* three bar dropdown menu */
+
+.menu-dropbtn {
+    background-color: #4CAF50;
+    color: rgb(243, 237, 237);
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    right: 0px;
+    z-index: 1;
+}
+
+.menu-dropdown {
+    position: relative;
+    display: block;
+}
+
+.menu-dropdown-content {
+    float: right;
+    right: 0px;
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    width: 100%;
+    transition: left 0.3s;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-dropdown-content a {
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu-dropdown a:hover {
+    background-color: #f08787;
+    transform: scale(1.2);
+    transition: transform 0.6s;
+}
+
+.menu-dropdown:hover .menu-dropdown-content {
+    display: block;
+}
+
+.menu-dropdown:hover .menu-dropbtn {
+    background-color: #3e8e41;
+}
+
+/* media queries */
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    .menu-dropdown-content,
+    .menu-dropbtn {
+        display: none;
+    }
+
+    #hero-image {
+        width: 100%;
+    }
+
+    #comment-section {
+        height: 500px;
+        max-width: 100%;
+    }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+    .menu-dropdown-content,
+    .menu-dropbtn {
+        display: none;
+    }
+
+    #comment-section {
+        height: 700px;
+        width: 100%;
+    }
+
+    #our-pizza-ethos {
+        height: auto;
+    }
+
+    .grid-container {
+        grid-gap: 7px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-item img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .grid-container label {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 10px;
+    } 
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .list {
+        font-size: 130%;
+    }
+
+    .menu-dropdown {
+        display: none;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    #logo {
+        clear: left;
+        margin-left: auto;
+    }
+
+    #hero-image {
+        height: 450px;
+    }
+
+    #our-pizza-ethos {
+        height: auto;
+    }
+
+    .menu-dropbtn {
+        display: inline;
+        padding-left: 75px;
+        position: relative;
+    }
+
+    .address {
+        font-size: small;
+    }
+
+    /* contact us form section  */
+
+    .signup-form {
+        margin-top: 40px;
+    }
+
+    #comment-section {
+        height: 500px;
+        width: 100%;
+    }
+
+    /* for menu */
+    .grid-container {
+        grid-gap: 7px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-item img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .grid-container label {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin: 10px;
+    }
+    
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .list a {
+        display: none;
+        margin-right: 0px;
+    }
+
+    .menu-dropdown {
+        display: block;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    #logo {
+        margin-left: auto;
+    }
+
+    #hero-image {
+        height: 450px;
+    }
+
+    #our-pizza-ethos {
+        height: 620px;
+    }
+
+    .flex-ethos img {
+        width: 95%;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .flex-ethos p,
+    h3 {
+        width: 90%;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .cover-text-left {
+        left: 0px;
+    }
+
+    .address {
+        font-size: small;
+    }
+
+    /* contact us form section */
+
+    .signup-form {
+        margin-top: 40px;
+    }
+
+    #comment-section {
+        height: 450px;
+        width: 100%;
+    }
+
+    /* for menu */
+    .grid-container {
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-item img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .grid-container label {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: normal;
+        margin: 10px;
+    }
+
+    .grid-container h2 {
+        font-size: large;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+    .list a {
+        display: none;
+    }
+
+    .menu-dropdown {
+        display: block;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    #logo {
+        font-size: 200%;
+        margin-left: auto;
+    }
+
+    #hero-image {
+        height: 350px;
+    }
+
+    /* our ethos section */
+
+    #our-pizza-ethos {
+        height: auto;
+    }
+
+    #our-pizza-ethos h2 {
+        font-size: 150%;
+        left: 10px;
+    }
+
+    .flex-ethos {
+        flex: 1 0 90%;
+    }
+
+    .flex-ethos p,
+    h3 {
+        width: 90%;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    /* maps  footer social media link icons */
+
+    .flex-map {
+        flex: 1 0 99%;
+    }
+
+    .flex-social {
+        text-align: center;
+    }
+
+    .social-media-links>li {
+        display: inline;
+    }
+
+    .social-media-links i {
+        font-size: 90%;
+        margin: 1%;
+    }
+
+    /* contact us form section */
+
+    .signup-form h2 {
+        font-size: 30px;
+    }
+
+    .signup-form {
+        top: 0px;
+        left: 0px;
+        bottom: 0;
+        height: 400px;
+    }
+
+    #comment-section {
+        height: 100vh;
+        max-width: 100%;
+    }
+
+    .join-button {
+        width: 130px;
+    }
+
+    /* address section */
+    .address {
+        top: 15px;
+        height: 170px;
+        font-size: small;
+    }
+
+    .address-left-about {
+        clear: right;
+    }
+
+    .address-right-about {
+        clear: right;
+        float: left;
+    }
+
+    /* for menu */
+    .grid-container {
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .grid-container label {
+        text-align: left;
+        font-size: 1.0rem;
+        font-weight: normal;
+        margin: 2px;
+    }
+
+    .grid-container h2 {
+        font-size: large;
+    }
+}
+
+/* ##Screen=Below 320px */
+
+@media (max-width: 320px) {
+
+    .list a {
+        display: none;
+    }
+
+    .list li {
+        margin-right: 0px;
+    }
+
+    .menu-dropdown {
+        display: block;
+        font-size: 10px;
+    }
+
+    /* header,hero image and logo */
+
+    header {
+        height: 50px;
+    }
+
+    #logo {
+        font-size: 170%;
+        margin-left: auto;
+    }
+
+    #hero-image {
+        height: 300px;
+    }
+
+    /* ethos section */
+    #our-pizza-ethos {
+        height: auto;
+    }
+
+    #our-pizza-ethos h2 {
+        font-size: 150%;
+        left: 10px;
+    }
+
+    .flex-ethos {
+        flex: 1 0 90%;
+    }
+
+    .flex-ethos img {
+        width: 95%;
+        height: 35vh;
+        border-radius: 20px;
+        padding-left: 10px;
+    }
+
+    .flex-ethos p,
+    h3 {
+        width: 90%;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    /* maps */
+
+    .flex-map {
+        flex: 1 0 99%;
+    }
+
+    /* footer social media link icons */
+
+    .flex-social {
+        text-align: center;
+    }
+
+    .social-media-links>li {
+        display: inline;
+    }
+
+    .social-media-links i {
+        font-size: 90%;
+        margin: 1%;
+    }
+
+    /* address section */
+
+    .address {
+        top: 5px;
+        height: 170px;
+        font-size: small;
+    }
+
+    .address-left-about {
+        clear: right;
+    }
+
+    .address-right-about {
+        clear: right;
+    }
+
+    /* contact us section */
+
+    #comment-section {
+        height: 120vh;
+        width: 90%;
+    }
+
+    .signup-form h2 {
+        font-size: large;
+    }
+
+    .signup-form {
+        height: 350px;
+    }
+
+    .join-button {
+        width: 80px;
+        padding: 10px 10px;
+    }
+
+    /* for menu */
+    .grid-container {
+        grid-gap: 2px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item img {
+        width: 100px;
+        height: 100px;
+        align-items: center;
+    }
+
+    .grid-container label {
+        text-align: center;
+        font-size: 1.0rem;
+        font-weight: normal;
+        margin-left: 2px;
+    }
+
+    .grid-container h2 {
+        font-size: large;
+    }
+
+}

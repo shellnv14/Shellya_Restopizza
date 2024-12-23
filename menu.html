@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for a pizza shop">
+    <meta name="keywords" content=" A simple website for a pizza shop">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Shellya Pizza</title>
+</head>
+
+<body>
+    <!--fixed header  -->
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Shellya Pizza</h1>
+        </a>
+        <nav>
+            <ul class="list">
+                <li>
+                    <a href="contact.html" aria-label="Go to contact us page">Kontak Kami</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="active" aria-label="Go to menu page">Menu</a>
+                </li>
+                <li>
+                    <a href="index.html" aria-label="Go to home page">Beranda</a>
+                </li>
+            </ul>
+            <!-- dropdown menu -->
+            <div class="menu-dropdown">
+                <button class="menu-dropbtn"><i class="fa-solid fa-bars"></i></button>
+                <div class="menu-dropdown-content">
+                    <a href="index.html" aria-label="Go to home page">Beranda</a>
+                    <a href="menu.html" aria-label="Go to menu page">Menu</a>
+                    <a href="contact.html" aria-label="Go to contact us page">Kontak Kami</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- menu  -->
+
+    <section>
+        <h2 class="cover-text-heading flex-container">Menu</h2>
+        <!-- <h2>MENU</h2> -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="./assets/images/pepperoni.png" alt="pepperoni pizza image">
+                <br>
+                <label>Pepperoni</label>
+                <select name="price" required>
+                    <option value="">Large - 180.000</option>
+                    <option value="12">Medium - 150.000</option>
+                    <option value="10">Small - 115.000</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/images/kebab.png" alt="kebaba pizza image">
+                <br>
+                <label>Kebab</label>
+                <select name="price" required>
+                    <option value="">Large - 160.000</option>
+                    <option value="12">Medium - 135.000</option>
+                    <option value="10">Small - 110.000</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/images/mexican-special.png" alt="mexican special pizza image">
+                <br>
+                <label>Mexican Special</label>
+                <select name="price" required>
+                    <option value="">Large - 185.000</option>
+                    <option value="12">Medium - 155.000</option>
+                    <option value="10">Small - 125.000</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/images/mexican-hot.png" alt="mexican hot pizza image">
+                <br>
+                <label>Mexican Hot</label>
+                <select name="price" required>
+                    <option value="">Large - 180.000</option>
+                    <option value="12">Medium - 155.000</option>
+                    <option value="10">Small - 120.000</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/images/hawaiian.png" alt="hawaiian pizza image">
+                <br>
+                <label>Hawaiian</label>
+                <select name="price" required>
+                    <option value="">Large - 155.000</option>
+                    <option value="12">Medium - 130.000</option>
+                    <option value="10">Small - 105.000</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/images/cajun-chicken.png" alt="cajun chicken pizza image">
+                <br>
+                <label>Cajun Chicken</label>
+                <select name="price" required>
+                    <option value="">Large - 180.000</option>
+                    <option value="12">Medium - 155.000</option>
+                    <option value="10">Small - 120.000</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/images/margarita.png" alt="margarita pizza image">
+                <br>
+                <label>Margarita</label>
+                <select name="price" required>
+                    <option value="">Large - 170.000</option>
+                    <option value="12">Medium - 145.000</option>
+                    <option value="10">Small - 115.000</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/images/bbq-chicken.png" alt="bbq chicken pizza image">
+
+                <br>
+                <label>BBQ Chicken</label>
+                <select name="price" required>
+                    <option value="">Large - 180.000</option>
+                    <option value="12">Medium - 155.000</option>
+                    <option value="10">Small - 120.000</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/images/vegeterian-pizza.png" alt="vegeterian pizza image">
+
+                <br>
+                <label>vegeterian</label>
+                <select name="price" required>
+                    <option value="">Large - 145.000</option>
+                    <option value="12">Medium - 120.000</option>
+                    <option value="10">Small - 100.000</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/images/Tuna Melt Pizza.png" alt="Tuna Melt Pizza image">
+
+                <br>
+                <label>Tuna Melt</label>
+                <select name="price" required>
+                    <option value="">Large - 170.000</option>
+                    <option value="12">Medium - 150.000</option>
+                    <option value="10">Small - 125.000</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <!-- section for Address, opening hours and  map -->
+    <section>
+        <div class="address">
+            <div class="address-left-about">
+                <h3 class="cover-text-heading">Get in Touch</h3>
+                <!-- Adding address here -->
+                <p><span>Pizza House</span> <br>12 Railway St,<br>Dillonsland,<br> Navan, Co. Meath <br>
+                    <span>Phone: (046) 9031595</span>
+                </p>
+            </div>
+            <div class="address-right-about">
+                <h3 class="cover-text-heading">Opening Hours </h3>
+                <ul>
+                    <li><span>Monday-Friday: </span>12:00-22:00</li>
+                    <li><span>Saturday: </span>12:00-23:00</li>
+                    <li><span>Sunday:</span> 11:00-22:00</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="flex">
+        <div class="flex-map">
+            <!-- Add iframe here -->
+            <div><iframe id="map-style"
+                src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=id&amp;q=-6.228819,106.609703&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"> 
+                </iframe>
+            </div>
+        </div>
+        <div class="flex-social">
+            <!-- social media links  -->
+            <ul class="social-media-links">
+
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page"><i class="fa-brands fa-square-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page"><i class="fa-brands fa-square-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Youtube page"><i class="fa-brands fa-square-youtube"></i></a>
+                </li>
+            </ul>
+            <!-- font awesome script -->
+            <script src="https://kit.fontawesome.com/e08e5fb41e.js" crossorigin="anonymous"></script>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for a pizza shop">
+    <meta name="keywords" content=" A simple website for a pizza shop">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Shellya Pizza</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Shellya Pizza</h1>
+        </a>
+        <nav>
+            <ul class="list">
+                <li>
+                    <a href="contact.html" aria-label="Go to contact us page">Kontak Kami</a>
+                </li>
+                <li>
+                    <a href="menu.html" aria-label="Go to menu page">Menu</a>
+                </li>
+                <li>
+                    <a href="index.html" class="active" aria-label="Go to home page">Beranda</a>
+                </li>
+            </ul>
+
+            <div class="menu-dropdown">
+                <button class="menu-dropbtn"><i class="fa-solid fa-bars"></i></button>
+                <div class="menu-dropdown-content">
+                    <a href="index.html" aria-label="Go to home page">Beranda</a>
+                    <a href="menu.html" aria-label="Go to menu page">Menu</a>
+                    <a href="contact.html" aria-label="Go to contact us page">Kontak Kami</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="hero-image">
+            <h3>.</h3>
+        </div>
+    </section>
+    <br>
+    <section id="our-pizza-ethos">
+        <div>
+            <h2 class="cover-text-heading">Bahan Terbaik</h2>
+        </div>
+
+        <div class="flex">
+            <div class="flex-ethos">
+                <img src='./assets/images/pizza-dough.webp' alt="pizza dough image">
+                <h3 class="cover-text-heading">Adonan</h3>
+                <p>Adonan kami dibuat setiap hari oleh koki kami menggunakan kombinasi tepung protein rendah
+                    dengan tambahan gandum utuh untuk memberikan cita rasa yang lebih kaya. Tanpa bahan kimia, tanpa aditif, 
+                    kami percaya bahwa adonan segar dan bahan-bahan yang bersih menghasilkan pizza yang lebih lezat!</p>
+            </div>
+            <div class="flex-ethos">
+                <img src='./assets/images/pizza-sauce.webp' alt="pizza sauce image">
+                <h3 class="cover-text-heading">Saus Tomat</h3>
+                <p>Kami membuat saus tomat setiap hari untuk memberikan rasa yang seimbang, manis dan asam.
+                    Saus ini penuh dengan kesegaran yang kuat dengan tingkat keasaman yang rendah dan rasa tomat yang manis.
+                    Organik, bebas gluten, dan vegan.
+                </p>
+            </div>
+            <div class="flex-ethos">
+                <img src='./assets/images/mozzarella-cheese.webp' alt="mozzarella cheese image">
+                <h3 class="cover-text-heading">Keju Mozzarella</h3>
+                <p>Kami menggunakan Anchor (mozzarella susu sapi) yang diproduksi di Fonterra dan 
+                    menawarkan rasa yang lembut, sangat segar, tajam, dan sangat elastis.
+                    Keju mudah dioleskan ke pizza tanpa cenderung lengket.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!-- section for Address, opening hours and  map -->
+    <section>
+        <div class="address">
+            <div class="address-left-about">
+                <h3 class="cover-text-heading">Hubungi Kami</h3>
+                <!-- Adding address here -->
+                <p><span>Shellya Pizza</span> <br>Karawaci,<br>Tangerang,<br> Banten, Indonesia <br>
+                    <span>No Telp: (021) 123456789</span>
+                </p>
+            </div>
+            <div class="address-right-about">
+                <h3 class="cover-text-heading">Jam Buka </h3>
+                <ul>
+                    <li><span>Senin-Jumat: </span>12:00-22:00</li>
+                    <li><span>Sabtu: </span>12:00-23:00</li>
+                    <li><span>Minggu: </span> 11:00-22:00</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="flex">
+        <div class="flex-map">
+            <!-- Add iframe here -->
+            <div><iframe id="map-style"
+                src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=id&amp;q=-6.228819,106.609703&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"> 
+                </iframe>
+            </div>
+        </div>
+        <div class="flex-social">
+            <!-- social media links  -->
+            <ul class="social-media-links">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page"><i class="fa-brands fa-square-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page"><i class="fa-brands fa-square-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Youtube page"><i class="fa-brands fa-square-youtube"></i></a>
+                </li>
+            </ul>
+            <!-- font awesome script -->
+            <script src="https://kit.fontawesome.com/e08e5fb41e.js" crossorigin="anonymous"></script>
+        </div>
+    </footer>
+</body>
+
+</html>
